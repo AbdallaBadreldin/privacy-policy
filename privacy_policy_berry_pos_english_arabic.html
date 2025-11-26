@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy — Berry POS (بيرى بوس)</title>
+  <style>
+    body{font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;line-height:1.6;color:#111;padding:24px;}
+    .container{max-width:960px;margin:0 auto}
+    h1,h2,h3{color:#0b5;}
+    hr{border:none;border-top:1px solid #eee;margin:24px 0}
+    .side-by-side{display:flex;gap:24px;flex-wrap:wrap}
+    .card{flex:1 1 440px;background:#fff;border:1px solid #f0f0f0;padding:18px;border-radius:8px;box-shadow:0 1px 2px rgba(0,0,0,0.03)}
+    .meta{font-size:0.95rem;color:#555}
+    code{background:#f7f7f7;padding:2px 6px;border-radius:4px;font-family:monospace}
+    footer{font-size:0.9rem;color:#666;margin-top:26px}
+    /* Arabic styling */
+    .arabic{direction:rtl;font-family: "Segoe UI", "Noto Naskh Arabic", Tahoma, Arial}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Privacy Policy — Berry POS (بيرى بوس)</h1>
+      <p class="meta">Effective date: <strong>[ADD EFFECTIVE DATE]</strong> &nbsp;|&nbsp; Developer: <strong>شركة بير بوس (بير بوس Company)</strong></p>
+      <p class="meta">This document contains an English and an Arabic version. If there is any contradiction between the two, please contact us at the support email listed below.</p>
+    </header>
+
+    <hr />
+
+    <div class="side-by-side">
+      <!-- English -->
+      <section class="card" lang="en">
+        <h2>English</h2>
+
+        <h3>1. Introduction</h3>
+        <p>Berry POS ("the App", "we", "our" or "us") is a point-of-sale mobile application developed by <strong>بير بوس Company</strong>. The App enables businesses to manage orders, print receipts and bills, store order data, connect to the internet to sync information, and recover accounts via email. This Privacy Policy explains how we collect, use, disclose and protect information when you use the App.</p>
+
+        <h3>2. Information We Collect</h3>
+        <ul>
+          <li><strong>Personal Information:</strong> Email address (used for account creation, login and password recovery), store/business name (optional), and any profile information you provide.</li>
+          <li><strong>Order & Transaction Data:</strong> Orders, invoices, receipts, and transaction history stored in the App or synced to our database.</li>
+          <li><strong>Device & Connection Data:</strong> Device model, operating system version, Bluetooth state (for connecting to printers), IP address and basic connection status.</li>
+          <li><strong>Usage Data:</strong> App interactions, features used, and crash/diagnostic information collected for improving the App.</li>
+        </ul>
+
+        <h3>3. Firebase Services We Use</h3>
+        <p>The App uses the following Firebase services (Google):</p>
+        <ul>
+          <li><code>firebase-analytics</code> — collects anonymous usage statistics to help us understand and improve app behavior.</li>
+          <li><code>firebase-messaging</code> (FCM) — used to deliver push notifications to your device (if you grant notification permission).</li>
+          <li><code>firebase-database</code> — Firebase Realtime Database used to sync and store orders and business data.</li>
+          <li><code>firebase-inappmessaging-display</code> — used to display targeted in-app messages that help guide users and announce features.</li>
+        </ul>
+        <p>Implementation references used in the project (for developer reference):</p>
+        <pre><code>implementation(platform("com.google.firebase:firebase-bom:34.6.0"))
+implementation("com.google.firebase:firebase-inappmessaging-display")
+implementation("com.google.firebase:firebase-analytics")
+implementation("com.google.firebase:firebase-messaging")
+implementation("com.google.firebase:firebase-database")</code></pre>
+
+        <h3>4. Android Permissions</h3>
+        <p>The App requests the following Android permissions and features. We explain why each is needed:</p>
+        <ul>
+          <li><code>android.permission.INTERNET</code> — required for syncing orders, communicating with Firebase services, account login and password recovery.</li>
+          <li><code>android.permission.POST_NOTIFICATIONS</code> — to show push notifications (updates, alerts, reminders) when you allow notifications.</li>
+          <li><code>android.permission.BLUETOOTH</code>, <code>android.permission.BLUETOOTH_ADMIN</code>, <code>android.permission.BLUETOOTH_CONNECT</code>, <code>android.permission.BLUETOOTH_SCAN</code> — used for discovering, pairing and connecting to Bluetooth POS printers to print receipts and bills. Bluetooth is not used to collect unrelated personal data.</li>
+          <li><code>uses-feature android:name="android.hardware.screen.landscape"</code> — indicates the app is designed to run in landscape orientation on POS devices.</li>
+        </ul>
+
+        <h3>5. How We Use Your Information</h3>
+        <p>We use collected information to:</p>
+        <ul>
+          <li>Create and manage user accounts and authentication.</li>
+          <li>Store, process and sync orders, invoices and receipts.</li>
+          <li>Connect and send print jobs to Bluetooth POS printers.</li>
+          <li>Send password reset emails and deliver notifications.</li>
+          <li>Analyze usage (via Firebase Analytics) to improve features and stability.</li>
+        </ul>
+
+        <h3>6. Data Storage & Security</h3>
+        <p>Order and account data synced to Firebase Realtime Database are stored under our project and protected using Firebase security rules. We use industry-standard measures to protect data in transit and at rest. However, no method of transmission or storage is 100% secure — we cannot guarantee absolute security.</p>
+
+        <h3>7. Data Sharing & Third Parties</h3>
+        <p>We may share data only in the following limited situations:</p>
+        <ul>
+          <li>With Firebase/Google as necessary for the App to function.</li>
+          <li>With service providers contracted to assist in operating the App (e.g., email delivery services).</li>
+          <li>If required by law, or to respond to lawful requests by public authorities.</li>
+        </ul>
+        <p>We do not sell or rent personal information to third parties for their marketing purposes.</p>
+
+        <h3>8. Password Recovery</h3>
+        <p>If you use the "Forgot Password" functionality, we will use your provided email only to verify identity and deliver password reset instructions.</p>
+
+        <h3>9. Children</h3>
+        <p>The App is intended for business use and is not directed at children under 13. We do not knowingly collect personal information from children under 13.</p>
+
+        <h3>10. Your Rights & Choices</h3>
+        <p>You have the right to request access to, correction or deletion of your personal data. To exercise these rights, please contact us at the address below. We will respond in accordance with applicable law.</p>
+
+        <h3>11. Contact Information</h3>
+        <p>If you have questions about this Privacy Policy or our data practices, contact:</p>
+        <p><strong>بير بوس Company</strong><br>Support email: <a href="mailto:[ADD SUPPORT EMAIL]">[ADD SUPPORT EMAIL]</a></p>
+
+        <p><em>To publish this policy in Google Play Console, host this HTML file on a publicly accessible HTTPS URL and provide the link in the Play Console "Privacy Policy" field.</em></p>
+      </section>
+
+      <!-- Arabic -->
+      <section class="card arabic" lang="ar">
+        <h2>العربية</h2>
+
+        <h3>1. المقدمة</h3>
+        <p>تطبيق <strong>بيرى بوس</strong> ("التطبيق"، "نحن"، "لنا") هو تطبيق نقاط بيع تم تطويره بواسطة شركة بير بوس. يتيح التطبيق للأعمال إدارة الطلبات، طباعة الإيصالات والفواتير، حفظ بيانات الطلبات، الاتصال بالإنترنت لمزامنة البيانات، واستعادة الحساب عبر البريد الإلكتروني. توضح سياسة الخصوصية هذه كيفية جمعنا للمعلومات واستخدامنا لها وحمايتها عند استخدام التطبيق.</p>
+
+        <h3>2. المعلومات التي نجمعها</h3>
+        <ul>
+          <li><strong>المعلومات الشخصية:</strong> البريد الإلكتروني (للإنشاء وتسجيل الدخول واستعادة كلمة المرور)، اسم المتجر/النشاط (اختياري)، وأي معلومات ملف شخصي تُدخلها.</li>
+          <li><strong>بيانات الطلبات والمعاملات:</strong> الطلبات، الفواتير، الإيصالات، وسجل المعاملات المحفوظة أو المتزامنة.</li>
+          <li><strong>بيانات الجهاز والاتصال:</strong> نوع الجهاز، نسخة نظام التشغيل، حالة البلوتوث (للاتصال بالطابعات)، عنوان الـ IP وحالة الاتصال.</li>
+          <li><strong>معلومات الاستخدام:</strong> التفاعل مع التطبيق وميزات التطبيق ومعلومات الأعطال التشخيصية لتحسين الأداء.</li>
+        </ul>
+
+        <h3>3. خدمات Firebase المستخدمة</h3>
+        <p>يستخدم التطبيق خدمات Firebase من Google كما يلي:</p>
+        <ul>
+          <li><code>firebase-analytics</code> — لجمع إحصاءات استخدام مجهولة لتحسين التطبيق.</li>
+          <li><code>firebase-messaging</code> — لإرسال الإشعارات إلى جهازك (عند منح الإذن).</li>
+          <li><code>firebase-database</code> — قاعدة بيانات Firebase Realtime لتخزين ومزامنة الطلبات وبيانات النشاط.</li>
+          <li><code>firebase-inappmessaging-display</code> — لعرض رسائل داخل التطبيق لمساعدة المستخدمين وإظهار المزايا.</li>
+        </ul>
+
+        <h3>4. أذونات الأندرويد</h3>
+        <p>يطلب التطبيق الأذونات والميزات التالية ونوضح سبب كل منها:</p>
+        <ul>
+          <li><code>android.permission.INTERNET</code> — لمزامنة الطلبات، الاتصال بخدمات Firebase، وتسهيل تسجيل الدخول واستعادة كلمة المرور.</li>
+          <li><code>android.permission.POST_NOTIFICATIONS</code> — لعرض الإشعارات والتنبيهات على الجهاز عندما تسمح بالإشعارات.</li>
+          <li><code>android.permission.BLUETOOTH</code>, <code>android.permission.BLUETOOTH_ADMIN</code>, <code>android.permission.BLUETOOTH_CONNECT</code>, <code>android.permission.BLUETOOTH_SCAN</code> — للبحث عن طابعات البلوتوث، الاقتران والاتصال بها لطباعة الفواتير والإيصالات. لا نستخدم البلوتوث لجمع بيانات شخصية غير مرتبطة بالتطبيق.</li>
+          <li><code>uses-feature android:name="android.hardware.screen.landscape"</code> — يوضح أن التطبيق مصمم للعمل في وضع العرض الأفقي على أجهزة نقاط البيع.</li>
+        </ul>
+
+        <h3>5. كيفية استخدامنا للمعلومات</h3>
+        <p>نستخدم المعلومات المُجمعة من أجل:</p>
+        <ul>
+          <li>إنشاء الحسابات وإدارة المصادقة.</li>
+          <li>حفظ ومعالجة ومزامنة الطلبات والفواتير والإيصالات.</li>
+          <li>الاتصال بأجهزة الطباعة عبر البلوتوث وإرسال أوامر الطباعة.</li>
+          <li>إرسال رسائل إعادة تعيين كلمة المرور والإشعارات.</li>
+          <li>تحليل الاستخدام عبر Firebase Analytics لتحسين التطبيق.</li>
+        </ul>
+
+        <h3>6. تخزين وحماية البيانات</h3>
+        <p>يتم تخزين بيانات الطلب والحسابات المتزامنة في مشروع Firebase لدينا ومحمية بواسطة قواعد أمان Firebase. نتخذ إجراءات قياسية في الصناعة لحماية البيانات أثناء النقل والتخزين. ومع ذلك، لا يوجد نظام آمن بنسبة 100% ولا يمكننا ضمان الأمان المطلق.</p>
+
+        <h3>7. مشاركة البيانات وأطراف ثالثة</h3>
+        <p>قد نشارك البيانات فقط في الحالات المحدودة التالية:</p>
+        <ul>
+          <li>مع Firebase/Google حسب الحاجة لوظائف التطبيق.</li>
+          <li>مع مزودي خدمات مساعدين لتشغيل التطبيق (مثل خدمات البريد الإلكتروني).</li>
+          <li>إذا طلبت الجهات القانونية ذلك وفقاً للقانون.</li>
+        </ul>
+        <p>نحن لا نبيع أو نؤجر معلومات المستخدمين لأغراض تسويقية لطرف ثالث.</p>
+
+        <h3>8. استعادة كلمة المرور</h3>
+        <p>عند استخدام ميزة "نسيت كلمة المرور" سيتم استخدام بريدك الإلكتروني فقط للتحقق وإرسال تعليمات إعادة التعيين.</p>
+
+        <h3>9. الأطفال</h3>
+        <p>التطبيق مخصص للأعمال التجارية وليس موجهًا للأطفال تحت 13 عامًا. لا نجمع عن عمد بيانات شخصية من أطفال دون 13 عامًا.</p>
+
+        <h3>10. حقوقك</h3>
+        <p>لديك الحق في الوصول إلى بياناتك، طلب تعديلها، أو طلب حذفها أو إغلاق حسابك. لممارسة هذه الحقوق يرجى التواصل معنا.</p>
+
+        <h3>11. معلومات التواصل</h3>
+        <p>لأي استفسار عن سياسة الخصوصية أو طلبات حقوقك الرجاء التواصل مع:</p>
+        <p><strong>شركة بير بوس</strong><br>البريد الإلكتروني للدعم: <a href="mailto:[ADD SUPPORT EMAIL]">[ADD SUPPORT EMAIL]</a></p>
+
+        <p><em>لنشر هذه السياسة على Google Play Console: استضف هذا الملف HTML على رابط عام HTTPS ثم ضع رابط السياسة في حقل "Privacy Policy" في إعدادات التطبيق بجوجل بلاي.</em></p>
+      </section>
+    </div>
+
+    <footer>
+      <p>Need edits? Replace <code>[ADD EFFECTIVE DATE]</code> and <code>[ADD SUPPORT EMAIL]</code> with your real values. If you want, we can convert this HTML to a downloadable file (PDF/HTML) or help you host it with a public HTTPS link.</p>
+    </footer>
+  </div>
+</body>
+</html>
